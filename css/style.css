@@ -1,0 +1,129 @@
+html {
+	box-sizing: border-box;
+}
+*,*:before, *:after{
+	box-sizing: inherit;
+}
+body {
+	background-color: #2a2a2a;
+	padding:0;
+	margin:0 auto;
+	font-size:1.5em;
+	font-family: 'Quicksand', sans-serif;
+
+}
+.content {
+	background-color: #cdcccc;
+	height: 720px;
+	margin-top:110px;
+	margin: 6em auto;
+	background-size: cover;
+	width: 70%;
+	/*overflow:hidden;*/
+}
+.column1of3 {
+	width: 30%;
+	float:left;
+	padding:11em;
+	padding-left:4em;
+	padding-right:4em;
+}
+.column2of3{
+	width: 20%;
+	background-image: url('../images/shoppingtext.png');
+	background-repeat: no-repeat;
+	/*background-size: 100%;*/
+	height: 720px;
+	float:left;
+	background-position: right bottom;
+}
+.mobile{
+	/*background-image:url('../images/shoppinghorizontal.png');
+	background-size: 100%;
+	height:200px;
+	background-position: center;*/
+	display: none;
+}
+.column3of3 {
+	width: 50%;
+	float:left;
+	padding-top:4em;
+	padding-right:6em;
+	/*height:720px;*/
+}
+h1 {
+	text-align: center;
+
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 3em;
+	padding:0;
+	margin: 0;
+
+
+}
+.checked{
+	text-decoration: line-through;
+	color:#505050;
+}
+.textbox{
+	width: 150px;
+	height: 25px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 0.75em;
+}
+.button {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 0.75em;
+	background-color: green;
+	border-color: green;
+	border-radius: 20%;
+	height:25px;
+	padding-bottom:15px;
+}
+ul {
+	list-style-type:none;
+	padding:0;
+}
+.x {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 0.75em;
+	border-radius: 20%;
+	height:27px;
+	color:red;
+
+}
+@media only screen and (max-width:1475px){
+	.column1of3{
+		display:block;
+		width: 100%;
+		padding:2em;
+		text-align:center;
+	}
+	.column2of3{
+		display: none;
+
+	}
+	.mobile{
+		display:block;
+		font-family: 'Playfair Display', serif;
+		text-align: center;
+		font-weight: 900;
+		font-size: 4em;
+		margin:0;
+		padding:0;
+		font-style: italic;
+
+
+	}
+	.column3of3{
+		display:block;
+		width:100%;
+		padding:2em;
+		text-align: center;
+	}
+	h1 {
+		font-size: 2.5em;
+	}
+
+}
