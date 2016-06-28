@@ -9,7 +9,6 @@ body {
 	background-repeat: repeat;
 	background-size:40%;
 	border: none;
-	/*background-color: #2a2a2a;*/
 	padding:0;
 	margin:0 auto;
 	font-size:1.5em;
@@ -17,23 +16,24 @@ body {
 
 }
 .content {
-	background-color: #cdcccc;
+	background-color: white;
 	height: 720px;
 	margin-top:110px;
 	margin: 6em auto;
 	background-size: cover;
-	width: 70%;
+	width: 80%;
 	/*overflow:hidden;*/
 }
 .column1of3 {
-	width: 30%;
+	text-align:center;
+	width: 25%;
 	float:left;
-	padding:11em;
-	padding-left:4em;
-	padding-right:4em;
+	padding-top:6em;
+	padding-left:1em;
+	padding-right:1em;
 }
 .column2of3{
-	width: 20%;
+	width: 25%;
 	background-image: url('../images/shoppingtext.png');
 	background-repeat: no-repeat;
 	/*background-size: 100%;*/
@@ -42,10 +42,6 @@ body {
 	background-position: right bottom;
 }
 .mobile{
-	/*background-image:url('../images/shoppinghorizontal.png');
-	background-size: 100%;
-	height:200px;
-	background-position: center;*/
 	display: none;
 }
 .column3of3 {
@@ -58,17 +54,12 @@ body {
 h1 {
 	text-align: center;
 
-	font-family: 'Playfair Display', serif;
-	font-weight: 400;
+	/*font-family: 'Playfair Display', serif;
+	font-weight: 400;*/
 	font-size: 3em;
+	text-transform: uppercase;
 	padding:0;
 	margin: 0;
-
-
-}
-.checked{
-	text-decoration: line-through;
-	color:#505050;
 }
 .textbox{
 	width: 150px;
@@ -76,7 +67,7 @@ h1 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 0.75em;
 }
-.button {
+#submit {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 0.75em;
 	background-color: green;
@@ -91,13 +82,13 @@ ul {
 }
 .x {
 	font-family: 'Quicksand', sans-serif;
-	font-size: 0.75em;
+	font-size: 0.5em;
 	border-radius: 20%;
-	height:27px;
+	height:25px;
 	color:red;
 
 }
-@media only screen and (max-width:1475px){
+@media only screen and (max-width:1130px){
 	.column1of3{
 		display:block;
 		width: 100%;
@@ -128,6 +119,43 @@ ul {
 	}
 	h1 {
 		font-size: 2.5em;
+	}
+
+}
+@media only screen and (max-width:550px){
+	.content{
+		margin: 2em auto;
+	}
+	.column1of3{
+		display:block;
+		width: 100%;
+		padding:2em;
+		text-align:center;
+	}
+	.column2of3{
+		display: none;
+
+	}
+	.mobile{
+		display:block;
+		font-family: 'Playfair Display', serif;
+		text-align: center;
+		font-weight: 900;
+		font-size: 3em;
+		margin:0;
+		padding:0;
+		font-style: italic;
+
+
+	}
+	.column3of3{
+		display:block;
+		width:100%;
+		padding:2em;
+		text-align: center;
+	}
+	h1 {
+		font-size: 1.5em;
 	}
 
 }
